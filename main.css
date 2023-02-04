@@ -3,6 +3,20 @@ body {
     background: rgb(242, 241, 232);
 }
 
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
 header {
     width: 100%;
     border-bottom: 1px solid lightgray;
@@ -180,4 +194,21 @@ header {
 .section-btns-wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.img-header-banner img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+/* MEDIA QURIES */
+
+
+/* Mobile */
+@media screen and (max-width: 568px) {
+    .page-container {
+        padding: 20px 20px 0 20px;
+    }
 }
