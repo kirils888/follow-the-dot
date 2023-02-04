@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Follow The Dot</title>
+    <meta name="robots" content="noindex">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                <svg  viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="135" cy="135" r="131" stroke="#2E33A5" stroke-width="8"/>
+                    <path d="M59 59.5C43.8 59.1 43 50.5 43 45C41.8333 45 37.1 47.4 27.5 57C15.5 69 14.5 79 4 130.5C11.5 248 97 259.5 92 255.5C87 251.5 90 237 90 234C90 231 100 229 104 225C108 221 107 208 107 205C107 202 118 198 120 192.5C122 187 117 180 115 172.5C112.459 162.971 120.221 149.735 123 148.5C127.5 146.5 133.654 138.653 131.5 132.5C128 122.5 113.742 124.133 111 118.5C105.889 108 109 108.818 108 97C107.404 89.9579 107 89.1007 107 83.5C107 77.8993 100 55.5556 88 64C72.3758 74.9948 78 60 59 59.5Z" fill="#2E33A5"/>
+                    <path d="M159.5 114C163.464 108.648 167.57 105.215 169.5 103.5C172.369 100.949 177.382 98.653 184.5 98C188.545 97.6289 194.608 99.2682 199.5 98C205.904 96.3398 211.39 100.488 216.5 104.5C220.731 107.822 223.094 111.735 224 114C225.545 117.863 227.453 123.5 227.5 127C227.527 129 227.5 136.757 227.5 140C227.5 143.851 225.773 147.402 222.5 152C221.408 153.535 219.455 155.757 218 157.5C216.118 159.755 214.723 161.543 213.5 163.5C210.115 168.916 208.601 169.638 201 171C197.374 171.65 195.089 172.208 188.5 173.5C187.833 173.833 179.652 174.688 173.5 172.5C170.428 171.407 166.424 167.311 162.5 165.5C156 162.5 154.863 157.568 153.5 155.5C151.345 152.232 150.519 150.77 149.5 147C148.571 143.563 149.323 141.706 149.5 139C149.67 136.398 149.244 132.897 149.5 132C149.838 130.815 150.158 127.718 152.5 123.5C154.11 120.599 157.348 116.905 159.5 114Z" fill="#2E33A5"/>
+                </svg>
+    
+                </div>
+                <nav></nav>
+            </div>
+        </header>
+        <main>
+            <div class="page-container">
+                <div class="page-max-width">
+                    <h1>Nutrition and Lifestyle Questionaire</h1>
+                    <!-- <form class="page-form" id="ajaxForm" action="https://getform.io/f/d69a1bbd-37a4-440e-a904-92ad476bc397" method="POST"> -->
+                    <div class="page-form">
+                        <div class="section-eat">
+                            <fieldset class="contact-info">
+                                <label for="name">Name and surname:</label>
+                                <input type="text=" name="Name+Surname" placeholder="Type here">
+                            </fieldset>
+
+                            <fieldset class="contact-info">
+                                <label for="name">Email address:</label>
+                                <input type="email" name="Email" placeholder="Type here">
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>1. Do you shop less frequently than every four days?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question1" data-number="1" name="1.Do you shop less frequently than every four days?" value="Yes" class="input-radio">
+                                    <label for="question1">Yes</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question2" data-number="0" name="1.Do you shop less frequently than every four days?" value="No" class="input-radio">
+                                    <label for="question2">No</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>2. Do you eat more packaged (frozen or canned) fruits and vegetables than fresh?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question3" data-number="5" name="Do you eat more packaged (frozen or canned) fruits and vegetables than fresh?" value="Yes" class="input-radio">
+                                    <label for="question3">Yes</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question4" data-number="0" name="Do you eat more packaged (frozen or canned) fruits and vegetables than fresh?" value="No" class="input-radio">
+                                    <label for="question4">No</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>3. Do you eat more cooked vegetables than raw?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question5" data-number="3" name="Do you eat more cooked vegetables than raw?" value="Yes" class="input-radio">
+                                    <label for="question5">Yes</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question6" data-number="0" name="Do you eat more cooked vegetables than raw?" value="No" class="input-radio">
+                                    <label for="question6">No</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>4. Do you eat vegetables with less than two meals daily?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question7" data-number="5" name="Do you eat vegetables with less than two meals daily?" value="Yes" class="input-radio">
+                                    <label for="question7">Yes</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question8" data-number="0" name="Do you eat vegetables with less than two meals daily?" value="No" class="input-radio">
+                                    <label for="question8">No</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>5. Do you buy more non-organic vegetables than organic vegetables?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question9" data-number="5" name="Do you buy more non-organic vegetables than organic vegetables?" value="Yes" class="input-radio">
+                                    <label for="question9">Yes</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question10" data-number="0" name="Do you buy more non-organic vegetables than organic vegetables?" value="No" class="input-radio">
+                                    <label for="question10">No</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>6. Do you use microwave oven?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question11" name="Do you use a microwave oven?" data-number="2" value="1-2 times per week" class="input-radio">
+                                    <label for="question11">1-2 times per week</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question12" name="Do you use a microwave oven?"  data-number="5" value="3-4 times per week" class="input-radio">
+                                    <label for="question12">3-4 times per week</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question13" name="Do you use a microwave oven?" data-number="10" value="More than 4 times per week" class="input-radio">
+                                    <label for="question13">More than 4 times per week</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question14" name="Do you use a microwave oven?" data-number="0" value="No" class="input-radio">
+                                    <label for="question14">No</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>7. Do you eat quick cook grains such as Rice-aroni, Quaker Oats or Minute rice more often than slow cooked organic whole grains?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question15" data-number="5" name="Do you eat quick cook grains such as Rice-aroni, Quaker Oats or Minute rice more often than slow cooked organic whole grains?" value="Yes" class="input-radio">
+                                    <label for="question15">Yes</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question16" data-number="0" name="Do you eat quick cook grains such as Rice-aroni, Quaker Oats or Minute rice more often than slow cooked organic whole grains?" value="No" class="input-radio">
+                                    <label for="question16">No</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions">
+                                <p>8. Do you eat white bread more often than whole grain breads?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question17" data-number="5" name="Do you eat white bread more often than whole grain breads?" value="Yes" class="input-radio">
+                                    <label for="question17">Yes</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question18" data-number="0" name="Do you eat white bread more often than whole grain breads?" value="No" class="input-radio">
+                                    <label for="question18">No</label>
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset class="questions">
+                                <p>9. Do you drink pasteurized/homogenized milk, or eat cheeses frequently?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question19" data-number="1" name="Do you drink pasteurized/homogenized milk, or eat cheeses frequently?" value="1-2 times per week" class="input-radio">
+                                    <label for="question19">1-2 times per week"</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question20" data-number="3" name="Do you drink pasteurized/homogenized milk, or eat cheeses frequently?" value="3 times per week" class="input-radio">
+                                    <label for="question20">3 times per week</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question21" data-number="5" name="Do you drink pasteurized/homogenized milk, or eat cheeses frequently?" value="More than 3 times per week" class="input-radio">
+                                    <label for="question21">More than 3 times per week</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question22" data-number="0" name="Do you drink pasteurized/homogenized milk, or eat cheeses frequently?" value="More than 3 times per week" class="input-radio">
+                                    <label for="question22">No</label>
+                                </div>
+                            </fieldset>
+                            
+                            <div class="form-sum-result"></div>
+
+                            <!-- add hidden Honeypot input to prevent spams -->
+                            <input type="hidden" name="_gotcha" style="display:none !important">
+                            <div class="section-btns-wrapper">
+                                <button class="prev-section-btn section-btn">Prev section</button>
+                                <button class="next-section-btn section-btn">Next section</button>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Submit Form</button>
+
+                            <div class="success-container">
+                                <div class="success-wrapper">
+                                    <p>Thank you for filling out form</p>
+                                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xfhjdjbn.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px; margin: 0 auto;"  loop  autoplay></lottie-player>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+<script src='main.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<!-- <script>
+$("#ajaxForm").submit(function(e){
+  e.preventDefault();
+  var action = $(this).attr("action");
+  $.ajax({
+    type: "POST",
+    url: action,
+    crossDomain: true,
+    data: new FormData(this),
+    dataType: "json",
+    processData: false,
+    contentType: false,
+    headers: {
+      "Accept": "application/json"
+    }
+  }).done(function() {
+     $('.success-container').addClass('is-active');
+  }).fail(function() {
+     alert('An error occurred! Please try again later.')
+  });
+});
+</script> -->
+</body>
+</html>
