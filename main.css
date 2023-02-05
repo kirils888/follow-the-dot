@@ -193,7 +193,7 @@ header {
 
 .section-btns-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .img-header-banner img {
@@ -201,10 +201,6 @@ header {
     border-radius: 8px;
     width: 100%;
     border: 1px solid lightgray;
-}
-
-.prev-section-btn {
-    display: none;
 }
 
 /* MEDIA QURIES */
