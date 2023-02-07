@@ -14,7 +14,7 @@ let inputRadioArray = [];
 
 submitBtn.setAttribute("disabled", "");
 nextBtn.setAttribute("disabled", "");
-prevBtn.setAttribute("disabled", "");
+// prevBtn.setAttribute("disabled", "");
 
 // Loop trough all options to enable submit button
 inputRadioAll.forEach(function(inputRadio) {
