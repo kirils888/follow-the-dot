@@ -36,7 +36,7 @@
                     <h1>Nutrition and Lifestyle Questionaire</h1>
                     <!-- <form class="page-form" id="ajaxForm" action="https://getform.io/f/d69a1bbd-37a4-440e-a904-92ad476bc397" method="POST"> -->
                     <div class="page-form">
-                        <div class="section-eat">
+                        <div class="form-section is-active">
                             <fieldset class="contact-info">
                                 <label for="name">Name and surname:</label>
                                 <input type="text=" name="Name+Surname" placeholder="Type here">
@@ -46,8 +46,11 @@
                                 <label for="name">Email address:</label>
                                 <input type="email" name="Email" placeholder="Type here">
                             </fieldset>
-
-                            <fieldset class="questions">
+                            
+                            <div class="section-header">
+                                <h2>Section food</h2>
+                            </div>
+                            <fieldset class="questions questions-section">
                                 <div class="questions-wrapper"></div>
                                 <p>1. Do you shop less frequently than every four days?</p>
                                 <div class="questions-box">
@@ -430,23 +433,296 @@
                                 </div>
                             </fieldset>
                             
-                            
-                            <div class="form-sum-result"></div>
-
-                            <!-- add hidden Honeypot input to prevent spams -->
-                            <input type="hidden" name="_gotcha" style="display:none !important">
-                            <div class="section-btns-wrapper">
-                                <!-- <button class="prev-section-btn section-btn">Prev section</button> -->
-                                <button class="next-section-btn section-btn">Next section</button>
+                        </div>
+                        <div class="form-section is-hidden">
+                            <div class="section-header">
+                                <h2>Section stress</h2>
                             </div>
-                            
-                            <button type="submit" class="submit-btn">Submit Form</button>
-
-                            <div class="success-container">
-                                <div class="success-wrapper">
-                                    <p>Thank you for filling out form</p>
-                                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xfhjdjbn.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px; margin: 0 auto;"  loop  autoplay></lottie-player>
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>1. Do you experience lower abdominal bloating?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question71" data-number="10" name="Do you experience lower abdominal bloating?" value="Yes" class="input-radio">
+                                    <label for="question71">Yes (10)</label>
                                 </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question72" data-number="0" name="Do you experience lower abdominal bloating?" value="No" class="input-radio">
+                                    <label for="question72">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>2. Do you worry over job, income or money problems?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question73" data-number="10" name="Do you worry over job, income or money problems?" value="Yes" class="input-radio">
+                                    <label for="question73">Yes (10)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question74" data-number="0" name="Do you worry over job, income or money problems?" value="No" class="input-radio">
+                                    <label for="question74">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>2. Do you worry over job, income or money problems?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question75" data-number="10" name="Do you worry over job, income or money problems?" value="Yes" class="input-radio">
+                                    <label for="question75">Yes (10)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question76" data-number="0" name="Do you worry over job, income or money problems?" value="No" class="input-radio">
+                                    <label for="question76">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>3. Are any of your relationships causing you stress?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question77" data-number="10" name="Are any of your relationships causing you stress?" value="Yes" class="input-radio">
+                                    <label for="question77">Yes (10)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question78" data-number="0" name="Are any of your relationships causing you stress?" value="No" class="input-radio">
+                                    <label for="question78">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>4. Do you often feel anxious?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question79" data-number="5" name="Do you often feel anxious?" value="Yes" class="input-radio">
+                                    <label for="question79">Yes (5)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question80" data-number="0" name="Do you often feel anxious?" value="No" class="input-radio">
+                                    <label for="question80">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>5. Do you often feel upset when things go wrong or feel that things go wrong often?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question81" data-number="5" name="Do you often feel upset when things go wrong or feel that things go wrong often?" value="Yes" class="input-radio">
+                                    <label for="question81">Yes (5)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question82" data-number="0" name="Do you often feel upset when things go wrong or feel that things go wrong often?" value="No" class="input-radio">
+                                    <label for="question82">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>6. Do you lash out at others?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question83" data-number="5" name="Do you lash out at others?" value="Yes" class="input-radio">
+                                    <label for="question83">Yes (5)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question83" data-number="0" name="Do you lash out at others?" value="No" class="input-radio">
+                                    <label for="question83">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>7. Do you feel your sex drive is lower than normal for you?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question84" data-number="5" name="Do you feel your sex drive is lower than normal for you?" value="Yes" class="input-radio">
+                                    <label for="question84">Yes (5)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question85" data-number="0" name="Do you feel your sex drive is lower than normal for you?" value="No" class="input-radio">
+                                    <label for="question85">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>8. Do you feel stressed due to lack of intimacy in one or more relationships?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question86" data-number="5" name="Do you feel stressed due to lack of intimacy in one or more relationships?" value="Yes" class="input-radio">
+                                    <label for="question86">Yes (5)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question87" data-number="0" name="Do you feel stressed due to lack of intimacy in one or more relationships?" value="No" class="input-radio">
+                                    <label for="question87">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>9. Have you had reduced contact with friends (feeling antisocial) or an increase in contact because you feel you need to vent your frustrations or stresses to others?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question88" data-number="3" name="Have you had reduced contact with friends (feeling antisocial) or an increase in contact because you feel you need to vent your frustrations or stresses to others?" value="Yes" class="input-radio">
+                                    <label for="question88">Yes (3)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question89" data-number="0" name="Have you had reduced contact with friends (feeling antisocial) or an increase in contact because you feel you need to vent your frustrations or stresses to others?" value="No" class="input-radio">
+                                    <label for="question89">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>10. Do you feel isolated or suffer from loneliness?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question90" data-number="3" name="Do you feel isolated or suffer from loneliness?" value="Yes" class="input-radio">
+                                    <label for="question90">Yes (3)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question91" data-number="0" name="Do you feel isolated or suffer from loneliness?" value="No" class="input-radio">
+                                    <label for="question91">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>11. Do you take any form of medication prescribed by a physician directly or indirectly related to stress in your life or a psychological disorder?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question92" data-number="15" name="Do you take any form of medication prescribed by a physician directly or indirectly related to stress in your life or a psychological disorder?" value="Yes" class="input-radio">
+                                    <label for="question92">Yes (15)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question93" data-number="0" name="Do you take any form of medication prescribed by a physician directly or indirectly related to stress in your life or a psychological disorder?" value="No" class="input-radio">
+                                    <label for="question93">No (0)</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>12. Do you lose more than two days of work a year due to illness?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question94" data-number="5" name="Do you lose more than two days of work a year due to illness?" value="Yes" class="input-radio">
+                                    <label for="question94">Yes (5)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question95" data-number="0" name="Do you lose more than two days of work a year due to illness?" value="No" class="input-radio">
+                                    <label for="question95">No (0)</label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-section is-hidden">
+                            <div class="section-header">
+                                <h2>Circadian Health</h2>
+                            </div>
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>9. Do you live in the same time zone you were born in?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question71" data-number="10" name="Do you live in the same time zone you were born in?" value="Yes" class="input-radio">
+                                    <label for="question1">Yes (0)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question72" data-number="0" name="Do you live in the same time zone you were born in?" value="No" class="input-radio">
+                                    <label for="question2">No (5)</label>
+                                </div>
+                                <div class="questions-animation">
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-section is-hidden">
+                            <div class="section-header">
+                                <h2>You Are What You Eat</h2>
+                            </div>
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>1. Do you frequently skip meals?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question71" data-number="10" name="Do you frequently skip meals?" value="Yes" class="input-radio">
+                                    <label for="question1">Yes (3)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question72" data-number="0" name="Do you frequently skip meals?" value="No" class="input-radio">
+                                    <label for="question2">No (0)</label>
+                                </div>
+                                <div class="questions-animation">
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-section is-hidden">
+                            <div class="section-header">
+                                <h2>Digestive System Health</h2>
+                            </div>
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>1. Do you experience lower abdominal bloating?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question71" data-number="10" name="Do you experience lower abdominal bloating?" value="Yes" class="input-radio">
+                                    <label for="question1">Yes (0)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question72" data-number="0" name="Do you experience lower abdominal bloating?" value="No" class="input-radio">
+                                    <label for="question2">No (5)</label>
+                                </div>
+                                <div class="questions-animation">
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-section is-hidden">
+                            <div class="section-header">
+                                <h2>Fungus & Parasites</h2>
+                            </div>
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>1. Have you ever been given general anesthesia?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question71" data-number="10" name="Have you ever been given general anesthesia?" value="Yes" class="input-radio">
+                                    <label for="question1">Yes (0)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question72" data-number="0" name="Have you ever been given general anesthesia?" value="No" class="input-radio">
+                                    <label for="question2">No (5)</label>
+                                </div>
+                                <div class="questions-animation">
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-section is-hidden last-section">
+                            <div class="section-header">
+                                <h2>Detoxification System Health</h2>
+                            </div>
+                            <fieldset class="questions questions-section">
+                                <div class="questions-wrapper"></div>
+                                <p>1. Are your eyes sensitive to bright light?</p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question71" data-number="10" name="Are your eyes sensitive to bright light?" value="Yes" class="input-radio">
+                                    <label for="question1">Yes (3)</label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question72" data-number="0" name="Are your eyes sensitive to bright light?" value="No" class="input-radio">
+                                    <label for="question2">No (0)</label>
+                                </div>
+                                <div class="questions-animation">
+                                </div>
+                            </fieldset>
+                        </div>
+                        
+
+                        <div class="form-sum-result"></div>
+                        
+                        <!-- add hidden Honeypot input to prevent spams -->
+                        <input type="hidden" name="_gotcha" style="display:none !important">
+                        <div class="section-btns-wrapper">
+                            <!-- <button class="prev-section-btn section-btn">Prev section</button> -->
+                            <button class="next-section-btn section-btn">Next section</button>
+                            <button type="submit" class="submit-btn is-hidden">Submit Form</button>
+                        </div>
+
+                        <div class="success-container">
+                            <div class="success-wrapper">
+                                <p>Thank you for filling out form</p>
+                                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xfhjdjbn.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px; margin: 0 auto;"  loop  autoplay></lottie-player>
                             </div>
                         </div>
                     </div>
@@ -454,7 +730,7 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="page-max-width">
                 <p>&#169; 2023 FollowTheDot. All rights reserved.</p>
             </div>
