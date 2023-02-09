@@ -26,10 +26,8 @@ inputRadioAll.forEach(function(inputRadio) {
     })
 }); 
 
-console.log(formSection.length - 1);
-
 nextBtn.addEventListener("click", function() {
-  for (let i = 0; i < formSection.length; i++) {
+  for (let i = 0; i < formSection.length - 1; i++) {
     
     if (formSection[i].classList.contains("is-active")) {
       formSection[i].classList.remove("is-active")
@@ -37,13 +35,14 @@ nextBtn.addEventListener("click", function() {
       
       formSection[i+1].classList.remove("is-hidden")
       formSection[i+1].classList.add("is-active")
-      // const elementsArray = Array.from(elements);
-
+      if (formSection[i+1].classList.contains("last-section")) {
+        nextBtn.classList.add("is-hidden");
+        submitBtn.classList.remove("is-hidden");
+      }
       break;
-    } 
-      // nextBtn.classList.add("is-hidden");
-      // submitBtn.classList.remove("is-hidden");
+    }
   }
+
 });
 
 
