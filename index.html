@@ -6,7 +6,7 @@
     <title>Follow The Dot: Holistic Lifestyle</title>
     <meta name="robots" content="noindex">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css?v=0.11'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css?v=0.12'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,30 +42,37 @@
                     <!-- <div class="img-header-banner">
                         <img src="Assets/header-banner-avocadij-pomoginam.jpg" alt="header banner image questionaire">
                     </div> -->
+                    <span id="next-section-anchor"></span>
                     <h1>
                         <span lang="en">Nutrition and Lifestyle Questionnaire</span>
                         <span lang="ru" class="is-hidden">Питание и Образ жизни</span>
                     </h1>
-                    
-                    <!-- <form class="page-form" id="ajaxForm" action="https://getform.io/f/d69a1bbd-37a4-440e-a904-92ad476bc397" method="POST"> -->
-                    <div class="page-form">
-
+                    <form id="question-form" class="page-form" action="https://formspree.io/f/mjvdrboe" method="POST">
+                    <!-- <div class="page-form"> -->
+                        <input type="hidden" name="YOU ARE WHAT YOU EAT" class="input-scores" value="">
+                        <input type="hidden" name="STRESS" class="input-scores" value="">
+                        <input type="hidden" name="SLEEP/WAKE CYCLES" class="input-scores" value="">
+                        <input type="hidden" name="YOU ARE WHEN YOU EAT" class="input-scores" value="">
+                        <input type="hidden" name="DIGESTIVE SYSTEM HEALTH" class="input-scores" value="">
+                        <input type="hidden" name="FUNGUS & PARASITES" class="input-scores" value="">
+                        <input type="hidden" name="DETOXIFICATION SYSTEM HEALTH" class="input-scores" value="">
+                        <input type="hidden" name="TOTAL SCORE" class="input-total-scores" value="">
                         <!-- YOU ARE WHAT YOU EAT -->
                         <div class="form-section form-section-what-eat is-active">
                             <fieldset class="contact-info">
-                                <label for="fullName">
+                                <label for="name">
                                     <span lang="en">Name and surname:</span>
                                     <span lang="ru" class="is-hidden">Имя и фамилия:</span>
                                 </label>
-                                <input id="customer-full-name" type="text" name="fullName" placeholder="Type here">
+                                <input id="customer-full-name" type="text" name="name" placeholder="Type here">
                             </fieldset>
 
                             <fieldset class="contact-info">
-                                <label for="name">
+                                <label for="email">
                                     <span lang="en">Email address:</span>
-                                    <span lang="ru" class="is-hidden">Э-майл адрес: </span>
+                                    <span lang="ru" class="is-hidden">Э-майл адрес:</span>
                                 </label>
-                                <input type="email" name="Email" placeholder="Type here">
+                                <input type="email" name="email" placeholder="Type here">
                             </fieldset>
                             
                             <div class="section-header">
@@ -93,7 +100,7 @@
                                         <span lang="ru" class="is-hidden">Нет</span>
                                     </label>    
                                 </div>
-                            </fieldset>
+                            </fieldset> 
 
                             <fieldset class="questions">
                                 <p>
@@ -387,7 +394,7 @@
                                         <span lang="ru" class="is-hidden">Нет</span>
                                     </label>
                                 </div>
-                            </fieldset>
+                            </fieldset> 
 
                             <fieldset class="questions">
                                 <p>
@@ -418,15 +425,15 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question35" data-number="1" name="Do you use commercial salad dressings?" value="1-2 times per week" class="input-radio">
                                     <label for="question35">
-                                        <span lang="en">once a week</span>
-                                        <span lang="ru" class="is-hidden">один раз в неделю</span>
+                                        <span lang="en">Once a week</span>
+                                        <span lang="ru" class="is-hidden">Один раз в неделю</span>
                                     </label>
                                 </div>
                                 <div class="questions-box">
                                     <input type="radio" id="question36" data-number="2" name="Do you use commercial salad dressings?" value="3 times per week" class="input-radio">
                                     <label for="question36">
-                                        <span lang="en">twice per week</span>
-                                        <span lang="ru" class="is-hidden">два раза в неделю</span>
+                                        <span lang="en">Twice per week</span>
+                                        <span lang="ru" class="is-hidden">Два раза в неделю</span>
                                     </label>
                                 </div>
                                 <div class="questions-box">
@@ -453,14 +460,14 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question39" data-number="1" name="Do you use Mayonnaise or products containing hydrogenated oils?" value="1-2 times per week" class="input-radio">
                                     <label for="question39">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">Один раз в неделю</span>
                                     </label>
                                 </div>
                                 <div class="questions-box">
                                     <input type="radio" id="question40" data-number="2" name="Do you use Mayonnaise or products containing hydrogenated oils?" value="3 times per week" class="input-radio">
                                     <label for="question40">
-                                        <span lang="en">twice per week</span>
+                                        <span lang="en">Twice per week</span>
                                         <span lang="ru" class="is-hidden">два раза в неделю</span>
                                     </label>
                                 </div>
@@ -509,7 +516,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question45" data-number="1" name="Do you use white table sugar as a sweetener?" value="1-2 times per week" class="input-radio">
                                     <label for="question45">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">Один раз в неделю</span>
                                     </label>
                                 </div>
@@ -523,7 +530,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question47" data-number="10" name="Do you use white table sugar as a sweetener?" value="More than 3 times per week" class="input-radio">
                                     <label for="question47">
-                                        <span lang="en">more than 3 times per week</span>
+                                        <span lang="en">More than 3 times per week</span>
                                         <span lang="ru" class="is-hidden">Более 3x раз в неделю</span>
                                     </label>
                                 </div>
@@ -544,7 +551,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question49" data-number="1" name="Do you use artificial sweeteners such as Sweet-n-Low, Equal or Nurtasweet?" value="1-2 times per week" class="input-radio">
                                     <label for="question49">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">Один раз в неделю</span>        
                                     </label>
                                 </div>
@@ -713,7 +720,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question67" data-number="1" name="Do you eat some form of store bought dessert, such as ice cream, cookies, donuts, cakes or pies after dinner most nights?" value="1-2 times per week" class="input-radio">
                                     <label for="question67">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">Один раз в неделю</span>   
                                     </label>
                                 </div>
@@ -741,7 +748,7 @@
                             </fieldset>
                         </div>
 
-                        <!-- STRESS SECTTION -->
+                        <!-- STRESS SECTION -->
                         <div class="form-section form-section-stress is-hidden">
                             <div class="section-header">
                                 <h2>
@@ -771,7 +778,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">2. Do you worry over job, income or money problems?</span>
                                     <span lang="ru" class="is-hidden">2. Вы испытываете беспокойство по поводу дохода, работы или денежных проблем?</span>
@@ -792,7 +799,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">3. Are any of your relationships causing you stress?</span>
                                     <span lang="ru" class="is-hidden">3. Какие либо из ваших взаимоотношений вызывают у вас стресс? </span>
@@ -813,7 +820,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">4. Do you often feel anxious?</span>
                                     <span lang="ru" class="is-hidden">4. Вы часто чувствуете тревогу?</span>
@@ -834,7 +841,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">5. Do you often feel upset when things go wrong or feel that things go wrong often?</span>
                                     <span lang="ru" class="is-hidden">5. Вы расстраивайтесь, если что-то идет не так, как вы хотели или считайте ли вы, что что-то постоянно идет не так?</span>
@@ -855,7 +862,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">6. Do you lash out at others?</span>
                                     <span lang="ru" class="is-hidden">6. Вы срываетесь на других?</span>
@@ -876,7 +883,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">7. Do you feel your sex drive is lower than normal for you?</span>
                                     <span lang="ru" class="is-hidden">7. Вы чувствуете, что ваше сексуальное влечение ниже, чем обычно?</span>
@@ -897,7 +904,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">8. Do you feel stressed due to lack of intimacy in one or more relationships?</span>
                                     <span lang="ru" class="is-hidden">8. Вы испытываете стресс из-за нехватки близости в одних или более отношений?</span>
@@ -918,7 +925,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">9. Have you had reduced contact with friends (feeling antisocial) or an increase in contact because you feel you need to vent your frustrations or stresses to others?</span>
                                     <span lang="ru" class="is-hidden">9. Становитесь ли вы менее социальным (уменьшаете контакты с друзьями) или же наоборот, становитесь более социальным, потому что чувствуете,  что вам нужно выплеснуть ваше разочарование или стресс на других?</span>
@@ -939,7 +946,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">10. Do you feel isolated or suffer from loneliness?</span>
                                     <span lang="ru" class="is-hidden">10. Вы чувствуете себя замкнутым или страдаете от одиночества?</span>
@@ -960,7 +967,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">11. Do you take any form of medication prescribed by a physician directly or indirectly related to stress in your life or a psychological disorder?</span>
                                     <span lang="ru" class="is-hidden">11. Вы принимаете какие-либо медикаменты, которые прямым или косвенным образом относятся к снятию стресса или другим психологическим расстройствам?</span>
@@ -981,7 +988,7 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="questions questions-section">
+                            <fieldset class="questions">
                                 <p>
                                     <span lang="en">12. Do you lose more than two days of work a year due to illness?</span>
                                     <span lang="ru" class="is-hidden">12. Вы пропускаете 2 или более дней работы по причине болезни?</span>
@@ -1007,7 +1014,7 @@
                         <div class="form-section is-hidden">
                             <div class="section-header">
                                 <h2>
-                                    <span lang="en">Sleep/Wake Cyclese</span>
+                                    <span lang="en">Sleep/Wake Cycles</span>
                                     <span lang="ru" class="is-hidden">Циклы сна и бодрствования</span>
                                 </h2>
                             </div>
@@ -1061,7 +1068,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question100" data-number="1" name="Do you wake up feeling un-rested and in need of more sleep?" value="1-2 times per week" class="input-radio">
                                     <label for="question100">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">1 раз в неделю</span>
                                     </label>
                                 </div>
@@ -1180,7 +1187,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question112" data-number="1" name="Do you wake up at night between 1:00 am and 4:00 am and have a hard time falling back to sleep?" value="once a week" class="input-radio">
                                     <label for="question112">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">1 раз в неделю</span>
                                     </label>
                                 </div>
@@ -1215,7 +1222,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question116" data-number="1" name="Do you tend to have a hard time staying awake in the afternoon after eating lunch?" value="1-2 times per week" class="input-radio">
                                     <label for="question116">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">1 раз в неделю</span>
                                     </label>
                                 </div>
@@ -1301,7 +1308,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question124" data-number="1" name="Do you typically go more than four hours without eating?" value="1-2 times per week" class="input-radio">
                                     <label for="question124">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">1 раз в неделю</span>
                                     </label>
                                 </div>
@@ -1336,7 +1343,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question128" data-number="1" name="Do you sometimes skip breakfast?" value="1-2 times per week" class="input-radio">
                                     <label for="question128">
-                                        <span lang="en">once a week</span>
+                                        <span lang="en">Once a week</span>
                                         <span lang="ru" class="is-hidden">1 раз в неделю</span>
                                     </label>
                                 </div>
@@ -1468,7 +1475,7 @@
                                 </p>
                                 <div class="questions-box">
                                     <input type="radio" id="question142" data-number="1" name="Have you tried diets to lose weight?" value="Once" class="input-radio">
-                                    <label for="question142">O
+                                    <label for="question142">
                                         <span lang="en">Once</span>
                                         <span lang="ru" class="is-hidden">Однажды</span>
                                     </label>
@@ -1942,7 +1949,7 @@
                                 </p>
                                 <div class="questions-box">
                                     <input type="radio" id="question190" data-number="0" name="Would you consider your life to be" value="Stressfree" class="input-radio">
-                                    <label for="question190">Stressfree
+                                    <label for="question190">
                                         <span lang="en">Stressfree</span>
                                         <span lang="ru" class="is-hidden">Без стресса</span>
                                     </label>
@@ -2280,7 +2287,7 @@
                                 <div class="questions-box">
                                     <input type="radio" id="question224" data-number="10" name="Are you sensitive to perfumes, paint fumes, traffic fumes, detergents or cigarette smoke?" value="Very" class="input-radio">
                                     <label for="question224">
-                                        <span lang="en">Очень</span>
+                                        <span lang="en">Very</span>
                                         <span lang="ru" class="is-hidden">Очень</span>
                                     </label>
                                 </div>
@@ -2422,36 +2429,42 @@
                             </fieldset>
                         </div>
                         
-                        
                         <!-- add hidden Honeypot input to prevent spams -->
                         <input type="hidden" name="_gotcha" style="display:none !important">
                         <div class="section-btns-wrapper">
                             <!-- <button class="prev-section-btn section-btn">Prev section</button> -->
-                            <button class="next-section-btn section-btn">
+                            <a href="#next-section-anchor" class="next-section-btn section-btn">
                                 <span lang="en">Next section</span>
                                 <span lang="ru" class="is-hidden">Следущая секция</span>
+                            </a>
+                            <button type="submit" class="submit-btn is-hidden">
+                                <span lang="en">Show results</span>
+                                <span lang="ru" class="is-hidden">Посмотреть результаты</span>
                             </button>
-                            <button type="submit" class="submit-btn is-hidden">Submit Form</button>
                         </div>
-
-                        <!-- <div class="success-container">
-                            <div class="success-wrapper">
-                                <p>Thank you for filling out form</p>
-                                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xfhjdjbn.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px; margin: 0 auto;"  loop  autoplay></lottie-player>
-                            </div>
-                        </div> -->
-                    </div>
-                    <!-- </form> -->
+                    <!-- </div>  -->
+                    </form>
                 </div>
+
+                <!-- TABLE SCORES -->
                 <div class="page-max-width">
-                    <p id="customer-name"></p>
+                    <p class="customer-welcome-txt is-hidden">
+                        <span lang="en">Hey</span>
+                        <span lang="ru" class="is-hidden">Привет</span>
+                        <span id="customer-name"></span>
+                        <span lang="en">here are your results</span>
+                        <span lang="ru" class="is-hidden">ниже твои результаты</span>
+                    </p>
                     <div class="table-container">
                         <div class="table-wrapper is-hidden">
                             <div class="section-header">
                                 <h2>
                                     <span lang="en">You are WHAT You Eat:</span>
                                     <span lang="ru" class="is-hidden">Ты то, ЧТО ты ешь:</span>
-                                    <span class="table-score"></span></h2>
+                                    <span class="table-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
+                                </h2>
                             </div>
                             <div class="table-results-container">
                                 <div class="table-results-wrapper">
@@ -2491,6 +2504,8 @@
                                     <span lang="en">Stress:</span>
                                     <span lang="ru" class="is-hidden">Стресс:</span>
                                     <span class="table-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
                                 </h2>
                             </div>
                             <div class="table-results-container">
@@ -2531,6 +2546,8 @@
                                     <span lang="en">Sleep/Wake Cyclese:</span>
                                     <span lang="ru" class="is-hidden">Циклы сна и бодрствования</span>
                                     <span class="table-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
                                 </h2>
                             </div>
                             <div class="table-results-container">
@@ -2571,6 +2588,8 @@
                                     <span lang="en">You are WHEN you eat:</span>
                                     <span lang="ru" class="is-hidden">Ты - это то, КОГДА ты ешь:</span>
                                     <span class="table-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
                                 </h2>
                             </div>
                             <div class="table-results-container">
@@ -2611,6 +2630,8 @@
                                     <span lang="en">Digestive system health:</span>
                                     <span lang="ru" class="is-hidden">Здоровье пищеварительной системы:</span>
                                     <span class="table-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
                                 </h2>
                             </div>
                             <div class="table-results-container">
@@ -2651,6 +2672,8 @@
                                     <span lang="en">Fungus and parsites:</span>
                                     <span lang="ru" class="is-hidden">Грибки и паразиты:</span>
                                     <span class="table-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
                                 </h2>
                             </div>
                             <div class="table-results-container">
@@ -2683,7 +2706,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- LAST SECTION -->
                     <div class="table-container">
                         <div class="table-wrapper is-hidden">
@@ -2692,6 +2715,8 @@
                                     <span lang="en">Detoxification System Health:</span>                                    
                                     <span lang="ru" class="is-hidden">Здоровье системы вывода токсинов:</span>
                                     <span class="table-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
                                 </h2>
                             </div>
                             <div class="table-results-container">
@@ -2724,6 +2749,48 @@
                             </div>
                         </div>
                     </div>
+                    <!-- TOTAL SCORE -->
+                    <div class="table-container">
+                        <div class="table-wrapper is-hidden">
+                            <div class="section-header">
+                                <h2>
+                                    <span lang="en">Total score:</span>                                    
+                                    <span lang="ru" class="is-hidden">Общий балл:</span>
+                                    <span class="table-total-score"></span>
+                                    <span lang="en">score</span>
+                                    <span lang="ru" class="is-hidden">очков</span>
+                                </h2>
+                            </div>
+                            <div class="table-results-container">
+                                <div class="table-results-wrapper">
+                                    <div class="table-red table-box">
+                                        <span class="table-th">High <br>Priority</span>
+                                        <span class="table-numbers">715</span>
+                                        <span class="table-arrow-img">
+                                            <svg fill="none" height="98" viewBox="0 0 27 98" width="27" xmlns="http://www.w3.org/2000/svg"><g fill="#212121"><path d="m10.843.967728c.6197-.619698 1.46-.967728 2.3366-.967728s1.7169.348065 2.3367.967728l9.9152 9.915272c.6376.6159 1.0012 1.4621 1.0091 2.3486.0076.8862-.3412 1.7386-.9681 2.3655-.6269.627-1.4793.9757-2.3655.9681-.8866-.0079-1.7328-.3714-2.3487-1.009l-4.2735-4.2735v64.7336c0 1.1809-.63 2.2719-1.6525 2.8624-1.0226.5905-2.2826.5905-3.3051 0-1.0226-.5904-1.65255-1.6814-1.65255-2.8624v-64.7336l-4.27351 4.2735c-.83934.8107-2.0443 1.1188-3.16979.8101-1.12575-.3085-2.005077-1.1878-2.313551-2.3136-.308818-1.1255-.000688-2.3304.810088-3.1698z"/><path d="m25.5129 86.7843-9.9152 9.9152c-.6197.6197-1.46.9677-2.3366.9677s-1.7169-.348-2.3367-.9677l-9.91521-9.9152c-.637611-.6159-1.00113805-1.4622-1.00907032-2.3487-.00757417-.8862.34118132-1.7386.96808032-2.3655.62693-.6269 1.47935-.9757 2.36556-.9681.88655.0079 1.73273.3715 2.34862 1.0091l4.27352 4.2735-.00001-64.7337c0-1.1808.63001-2.2719 1.65251-2.8624 1.0226-.5904 2.2826-.5904 3.3051 0 1.0226.5904 1.6525 1.6815 1.6525 2.8624l.0001 64.7337 4.2735-4.2735c.8393-.8108 2.0443-1.1189 3.1698-.8101 1.1257.3085 2.005 1.1878 2.3135 2.3135.3088 1.1255.0007 2.3304-.8101 3.1698z"/></g></svg>
+                                        </span>
+                                        <span class="table-numbers">300</span>
+                                    </div>
+                                    <div class="table-yellow table-box">
+                                        <span class="table-th">Moderate <br>Priority</span>
+                                        <span class="table-numbers">299</span>
+                                        <span class="table-arrow-img">
+                                            <svg fill="none" height="98" viewBox="0 0 27 98" width="27" xmlns="http://www.w3.org/2000/svg"><g fill="#212121"><path d="m10.843.967728c.6197-.619698 1.46-.967728 2.3366-.967728s1.7169.348065 2.3367.967728l9.9152 9.915272c.6376.6159 1.0012 1.4621 1.0091 2.3486.0076.8862-.3412 1.7386-.9681 2.3655-.6269.627-1.4793.9757-2.3655.9681-.8866-.0079-1.7328-.3714-2.3487-1.009l-4.2735-4.2735v64.7336c0 1.1809-.63 2.2719-1.6525 2.8624-1.0226.5905-2.2826.5905-3.3051 0-1.0226-.5904-1.65255-1.6814-1.65255-2.8624v-64.7336l-4.27351 4.2735c-.83934.8107-2.0443 1.1188-3.16979.8101-1.12575-.3085-2.005077-1.1878-2.313551-2.3136-.308818-1.1255-.000688-2.3304.810088-3.1698z"/><path d="m25.5129 86.7843-9.9152 9.9152c-.6197.6197-1.46.9677-2.3366.9677s-1.7169-.348-2.3367-.9677l-9.91521-9.9152c-.637611-.6159-1.00113805-1.4622-1.00907032-2.3487-.00757417-.8862.34118132-1.7386.96808032-2.3655.62693-.6269 1.47935-.9757 2.36556-.9681.88655.0079 1.73273.3715 2.34862 1.0091l4.27352 4.2735-.00001-64.7337c0-1.1808.63001-2.2719 1.65251-2.8624 1.0226-.5904 2.2826-.5904 3.3051 0 1.0226.5904 1.6525 1.6815 1.6525 2.8624l.0001 64.7337 4.2735-4.2735c.8393-.8108 2.0443-1.1189 3.1698-.8101 1.1257.3085 2.005 1.1878 2.3135 2.3135.3088 1.1255.0007 2.3304-.8101 3.1698z"/></g></svg>
+                                        </span>
+                                        <span class="table-numbers">170</span>
+                                    </div>
+                                    <div class="table-green table-box">
+                                        <span class="table-th">Low <br>Priority</span>
+                                        <span class="table-numbers">169</span>
+                                        <span class="table-arrow-img">
+                                            <svg fill="none" height="98" viewBox="0 0 27 98" width="27" xmlns="http://www.w3.org/2000/svg"><g fill="#212121"><path d="m10.843.967728c.6197-.619698 1.46-.967728 2.3366-.967728s1.7169.348065 2.3367.967728l9.9152 9.915272c.6376.6159 1.0012 1.4621 1.0091 2.3486.0076.8862-.3412 1.7386-.9681 2.3655-.6269.627-1.4793.9757-2.3655.9681-.8866-.0079-1.7328-.3714-2.3487-1.009l-4.2735-4.2735v64.7336c0 1.1809-.63 2.2719-1.6525 2.8624-1.0226.5905-2.2826.5905-3.3051 0-1.0226-.5904-1.65255-1.6814-1.65255-2.8624v-64.7336l-4.27351 4.2735c-.83934.8107-2.0443 1.1188-3.16979.8101-1.12575-.3085-2.005077-1.1878-2.313551-2.3136-.308818-1.1255-.000688-2.3304.810088-3.1698z"/><path d="m25.5129 86.7843-9.9152 9.9152c-.6197.6197-1.46.9677-2.3366.9677s-1.7169-.348-2.3367-.9677l-9.91521-9.9152c-.637611-.6159-1.00113805-1.4622-1.00907032-2.3487-.00757417-.8862.34118132-1.7386.96808032-2.3655.62693-.6269 1.47935-.9757 2.36556-.9681.88655.0079 1.73273.3715 2.34862 1.0091l4.27352 4.2735-.00001-64.7337c0-1.1808.63001-2.2719 1.65251-2.8624 1.0226-.5904 2.2826-.5904 3.3051 0 1.0226.5904 1.6525 1.6815 1.6525 2.8624l.0001 64.7337 4.2735-4.2735c.8393-.8108 2.0443-1.1189 3.1698-.8101 1.1257.3085 2.005 1.1878 2.3135 2.3135.3088 1.1255.0007 2.3304-.8101 3.1698z"/></g></svg>
+                                        </span>
+                                        <span class="table-numbers">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -2734,28 +2801,5 @@
         </footer> 
     </div>
 <script src='main.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<!-- <script>
-$("#ajaxForm").submit(function(e){
-  e.preventDefault();
-  var action = $(this).attr("action");
-  $.ajax({
-    type: "POST",
-    url: action,
-    crossDomain: true,
-    data: new FormData(this),
-    dataType: "json",
-    processData: false,
-    contentType: false,
-    headers: {
-      "Accept": "application/json"
-    }
-  }).done(function() {
-     $('.success-container').addClass('is-active');
-  }).fail(function() {
-     alert('An error occurred! Please try again later.')
-  });
-});
-</script> -->
 </body>
 </html>
