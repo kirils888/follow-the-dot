@@ -55,7 +55,7 @@ function radioChecks() {
       // Add data-number values to resultSum
       resultSum += inputRadioAllChecked[a].getAttribute("data-number") * 1;
       totalScore += inputRadioAllChecked[a].getAttribute("data-number") * 1;
-      console.log(totalScore)
+      // console.log(totalScore)
 
       // Remove data numbers from previous sections, so it doesn't count
       inputRadioAllChecked[a].removeAttribute("data-number")

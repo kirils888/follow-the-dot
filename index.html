@@ -6,6 +6,10 @@
     <title>Follow The Dot: Holistic Lifestyle</title>
     <meta name="robots" content="noindex">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css?v=0.12'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2430,7 +2434,7 @@
                         </div>
                         
                         <!-- add hidden Honeypot input to prevent spams -->
-                        <input type="hidden" name="_gotcha" style="display:none !important">
+                        <input type="text" name="_gotcha" style="display:none" />
                         <div class="section-btns-wrapper">
                             <!-- <button class="prev-section-btn section-btn">Prev section</button> -->
                             <a href="#next-section-anchor" class="next-section-btn section-btn">
@@ -2796,7 +2800,7 @@
         </main>
         <footer class="footer">
             <div class="page-max-width">
-                <p>&#169; <span class="year">2023</span> FollowTheDot. All rights reserved.</p>
+                <p>&#169; <span class="year"><script>document.write(new Date().getFullYear())</script></span> FollowTheDot. All rights reserved.</p>
             </div>
         </footer> 
     </div>
