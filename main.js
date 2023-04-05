@@ -27,19 +27,6 @@ let resultSum = 0
 let totalScore = 0
 let inputRadioArray = []
 
-// nextBtn.setAttribute("disabled", "");
-// submitBtn.setAttribute("disabled", "");
-
-// Loop trough all options to enable submit button
-// inputRadioAll.forEach(function(inputRadio) {
-//     inputRadio.addEventListener('change', function() {
-//       inputRadioArray = Array.from(inputRadioAll).filter(i => i.checked).map(i => i.value);
-//       if (inputRadioArray.length === 3) {
-//         nextBtn.removeAttribute("disabled", "");
-//       }
-//     })
-// }); 
-
 // Switch Language
 switchLang.addEventListener("click", function() {
   for (let i = 0; i < langRu.length; i++) {
@@ -144,24 +131,3 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
-
-    // $("#question-form").submit(function(e){
-    //   e.preventDefault();
-    //   var action = $(this).attr("action");
-    //   $.ajax({
-    //     type: "POST",
-    //     url: action,
-    //     crossDomain: true,
-    //     data: new FormData(this),
-    //     dataType: "json",
-    //     processData: false,
-    //     contentType: false,
-    //     headers: {
-    //       "Accept": "application/json"
-    //     }
-    //   }).done(function() {
-    //      console.log("form sent")
-    //   }).fail(function() {
-    //      alert('An error occurred! Please try again later.')
-    //   });
-    // });
