@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Follow The Dot: Holistic Lifestyle</title>
+    <meta name="robots" content="noindex">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="Assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets/Libs -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css?v=0.14'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body id="food-type-page">
+    <div class="page-wrapper">
+        <header>
+            <div class="header-container">
+                <div class="empty-column"></div>
+                <a href="type-of-food.html">
+                    <div class="logo-container">
+                        <svg  viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="135" cy="135" r="131" stroke="#2E33A5" stroke-width="8"/>
+                            <path d="M59 59.5C43.8 59.1 43 50.5 43 45C41.8333 45 37.1 47.4 27.5 57C15.5 69 14.5 79 4 130.5C11.5 248 97 259.5 92 255.5C87 251.5 90 237 90 234C90 231 100 229 104 225C108 221 107 208 107 205C107 202 118 198 120 192.5C122 187 117 180 115 172.5C112.459 162.971 120.221 149.735 123 148.5C127.5 146.5 133.654 138.653 131.5 132.5C128 122.5 113.742 124.133 111 118.5C105.889 108 109 108.818 108 97C107.404 89.9579 107 89.1007 107 83.5C107 77.8993 100 55.5556 88 64C72.3758 74.9948 78 60 59 59.5Z" fill="#2E33A5"/>
+                            <path d="M159.5 114C163.464 108.648 167.57 105.215 169.5 103.5C172.369 100.949 177.382 98.653 184.5 98C188.545 97.6289 194.608 99.2682 199.5 98C205.904 96.3398 211.39 100.488 216.5 104.5C220.731 107.822 223.094 111.735 224 114C225.545 117.863 227.453 123.5 227.5 127C227.527 129 227.5 136.757 227.5 140C227.5 143.851 225.773 147.402 222.5 152C221.408 153.535 219.455 155.757 218 157.5C216.118 159.755 214.723 161.543 213.5 163.5C210.115 168.916 208.601 169.638 201 171C197.374 171.65 195.089 172.208 188.5 173.5C187.833 173.833 179.652 174.688 173.5 172.5C170.428 171.407 166.424 167.311 162.5 165.5C156 162.5 154.863 157.568 153.5 155.5C151.345 152.232 150.519 150.77 149.5 147C148.571 143.563 149.323 141.706 149.5 139C149.67 136.398 149.244 132.897 149.5 132C149.838 130.815 150.158 127.718 152.5 123.5C154.11 120.599 157.348 116.905 159.5 114Z" fill="#2E33A5"/>
+                        </svg>
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li class="lang-switch">
+                            <!-- <span lang="ru">EN</span>
+                            <span lang="en" class="is-hidden">RU</span> -->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="page-container">
+                <div class="page-max-width questionnaire-container">
+                    <h1>
+                        <span lang="ru">Ваш тип питания</span>
+                    </h1>
+                    <!-- <form id="question-form" class="page-form" action="https://formspree.io/f/mjvdrboe" method="POST"> -->
+                    <form id="food-type-form" class="page-form">
+                        <div class="form-section">
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">1. Я лучше всего сплю:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question1A" name="question1" value="A" class="input-radio">
+                                    <label for="question1A">
+                                        <span lang="ru">A. Когда поем за 1-2 часа до сна</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question1B" name="question1" value="B" class="input-radio">
+                                    <label for="question1B">
+                                        <span lang="ru">B. Когда я ем за 3-4 часа до сна</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">2. Я лучше всего сплю:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question2A" name="question2" value="A" class="input-radio">
+                                    <label for="question2A">
+                                        <span lang="ru">A. Если мой ужин в основном состоит из мяса и небольшого количества овощей или других углеводов.</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question2B" name="question2" value="B" class="input-radio">
+                                    <label for="question2B">
+                                        <span lang="ru">B. Если мой ужин в основном состоит из овощей и других углеводов и относительно небольшого количества мяса.</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">3. Я лучше всего сплю и просыпаюсь наиболее отдохнувшим, если:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question3A" name="question3" value="A" class="input-radio">
+                                    <label for="question3A">
+                                        <span lang="ru">A. Не ем сладкого такого как печенье, конфеты или пирожные. Однако, если я съем хороший не слишком сладкий десерт, такой так высококачественное мороженое нормальной жирности, я, как правило, сплю хорошо.</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question3B" name="question3" value="B" class="input-radio">
+                                    <label for="question3B">
+                                        <span lang="ru">B. Даже если съем сладкий десерт</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">4. После энергичных упражнений мне как правило, хочется:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question4A" name="question4" value="A" class="input-radio">
+                                    <label for="question4A">
+                                        <span lang="ru">A. Продуктов или напитков с более высоким содержанием белка и/или жира, такие как белковые коктейли для бодибилдеров, например.</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question4B" name="question4" value="B" class="input-radio">
+                                    <label for="question4B">
+                                        <span lang="ru">В. Продукты или напитки с высоким содержанием углеводов (более сладкие), такие как газированные напитки или фруктовые соки.</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">5. Для того, чтобы продержаться 4 часа между приемами пищи и сохранить ясность ума и хорошее самочувствие, я предпочитаю есть:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question5A" name="question5" value="A" class="input-radio">
+                                    <label for="question5A">
+                                        <span lang="ru">А. Пищу, преимущественно мясную, с высоким содержанием белка и жира (например, ростбиф, свинина, лосось...) с углеводами в качестве добавки к еде.</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question5B" name="question5" value="B" class="input-radio">
+                                    <label for="question5B">
+                                        <span lang="ru">В. Пищу, преимущественно основанный на углеводах, такую как салат или овощи с небольшим количеством хлеба и небольшим количеством белка.</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">6. Форма моего тела близка к:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question6A" name="question6" value="A" class="input-radio">
+                                    <label for="question6A">
+                                        <span lang="ru">А. Мезоморфная V-образная, как у типичного борца, гимнаста или тяжелоатлета или эндоморфная, более естественно круглая, но от природы я достаточно сильный и очень хорошо реагирую на анаэробные виды спорта (пауэрлифтинг, спринтерский бег, бодибилдинг) или силовые упражнения.</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question6B" name="question6" value="B" class="input-radio">
+                                    <label for="question6B">
+                                        <span lang="ru">В. Эктоморфный или длинный и худощавый, как у гребца или триатлета, эндоморфный или более естественно округлый, но я лучше реагирую на выносливую атлетику, чем на силовые тренировки или анаэробные виды спорта.</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">7. Что лучше всего описывает вашу реакцию на сахар или сладкие продукты, такие как пончики (донатс), конфеты или подслащенные напитки:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question7A" name="question7" value="A" class="input-radio">
+                                    <label for="question7A">
+                                        <span lang="ru">А. Я получаю прилив энергии, могу испытывать дрожь или ненадолго чувствую себя хорошо, но тогда у меня, вероятно, упадет сахар в крови, что приведет к необходимости большего количества того же самого или к тому, чтобы съесть настоящую пищу, чтобы нормализовать себя.</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question7B" name="questio76" value="B" class="input-radio">
+                                    <label for="question7B">
+                                        <span lang="ru">В. Я довольно хорошо справляюсь со сладким и, кажется, не испытываю негативных последствий, хотя знаю, что слишком много для меня вредно.</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">8. Какое утверждение лучше всего описывает ваше отношение к еде в целом:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question8A" name="question8" value="A" class="input-radio">
+                                    <label for="question8A">
+                                        <span lang="ru">А. Я люблю еду и живу, чтобы есть</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question8B" name="question8" value="B" class="input-radio">
+                                    <label for="question8B">
+                                        <span lang="ru">В. Я не сильно заморачиваюсь по поводу еды и ем, чтобы жить</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">9. Чаще всего я предпочитаю:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question9A" name="question9" value="A" class="input-radio">
+                                    <label for="question9A">
+                                        <span lang="ru">А. Солить продукты большую часть времени</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question9B" name="question9" value="B" class="input-radio">
+                                    <label for="question9B">
+                                        <span lang="ru">В. Пробовать еду и время от времени посолить, но меня не особенно привлекают соленые продукты</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">10. Инстинктивно я предпочитаю есть:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question10A" name="question10" value="A" class="input-radio">
+                                    <label for="question10A">
+                                        <span lang="ru">А. Темное мясо, такое как куриные или индюшачьи ножки и бедра поверх белого мяса грудки</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question10B" name="question10" value="B" class="input-radio">
+                                    <label for="question10B">
+                                        <span lang="ru">В. Светлое мясо, такое как грудка цыпленка или индейки, поверх темного мяса ноги и бедра</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">11. Какой тип рыбы вам больше всего нравится, независимо от калорийности или жирности:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question11A" name="question11" value="A" class="input-radio">
+                                    <label for="question11A">
+                                        <span lang="ru">А. Анчоусы, икра, сельдь, мидии, сардины, морские ушки, моллюски, крабы, раки, омары, скумбрия, осьминоги, устрицы, лосось, морские гребешки, креветки, улитки, кальмары, тунец (темное мясо)</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question11B" name="question11" value="B" class="input-radio">
+                                    <label for="question11B">
+                                        <span lang="ru">В. Легкая рыба, сом, треска, камбала, пикша, окунь, малька, морской язык, форель, тунец (белый)</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">12. При употреблении молочных продуктов вы чувствуете себя лучше после еды:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question12A" name="question12" value="A" class="input-radio">
+                                    <label for="question12A">
+                                        <span lang="ru">А. Более жирные йогурты и сыры или десерты</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question8B" name="question12" value="B" class="input-radio">
+                                    <label for="question12B">
+                                        <span lang="ru">В. Легкие нежирные йогурты и сыры или десерты</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">13. Что касается перекусов, вы:</span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question13A" name="question13" value="A" class="input-radio">
+                                    <label for="question13A">
+                                        <span lang="ru">А. Лучше перекусывать между приемами пищи</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question13B" name="question13" value="B" class="input-radio">
+                                    <label for="question13B">
+                                        <span lang="ru">В. Как правило, легко справляюсь с интервалами между приемами пищи</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="questions questions-section">
+                                <p>
+                                    <span lang="ru">14. Какие характеристики лучше всего описывают вас: </span>
+                                </p>
+                                <div class="questions-box">
+                                    <input type="radio" id="question14A" name="question14" value="A" class="input-radio">
+                                    <label for="question14A">
+                                        <span lang="ru">А. Креативен, в целом хорошо переваривает пищу, имеет сильную иммунную систему и редко болеет, имеет аппетит к белкам, хорошо себя чувствует при употреблении жиров или жирной пищи, более мускулистый или склонен легко наращивать мышечную массу и/или силу</span>
+                                    </label>
+                                </div>
+                                <div class="questions-box">
+                                    <input type="radio" id="question14B" name="question14" value="B" class="input-radio">
+                                    <label for="question14B">
+                                        <span lang="ru">В. Логичен, более гибкого телосложения, как правило, чувствителен к перепадам температуры и сезону гриппа, не считает свою иммунную систему одним из ваших сильных качеств, предпочитает легкое мясо и продукты с низким содержанием жира, более склонны к выносливости</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span lang="ru">Посмотреть результаты</span>
+                        </button>
+                    </form>
+
+                    <div id="result-food-type" style="display: none;">
+                        <h3>Ваше тип питания</h3>
+                        <img id="food-type-image" alt="Food type image">
+                    </div>                    
+                </div>
+            </div>
+        </main> 
+        <footer class="footer">
+            <div class="page-max-width">
+                <p>&#169; <span class="year"><script>document.write(new Date().getFullYear())</script></span> FollowTheDot. All rights reserved.</p>
+            </div>
+        </footer> 
+    </div>
+<script src='food.js'></script>
+</body>
+</html>

@@ -115,6 +115,7 @@ header {
 .page-form fieldset label {
     margin-bottom: 20px;
     cursor: pointer;
+    width: 100%;
 }
 
 .page-form fieldset.contact-info input {
@@ -328,6 +329,29 @@ footer .page-max-width p {
 .table-numbers {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.last-table-container {
+    margin-bottom: 1.25rem;
+}
+
+/* FOOD TYPE PAGE */
+#food-type-image {
+    max-width: 100%;
+    width: 300px;
+}
+
+#result-food-type {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+#food-type-page .page-form fieldset.questions p {
+    font-size: 1.1rem;
+}
+
+#food-type-page .page-form fieldset label {
+    line-height: 1.3;
 }
 
 /* OTHER */

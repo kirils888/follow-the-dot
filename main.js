@@ -1,102 +1,91 @@
-// Global variables
-const TABLE_SCORES = document.querySelectorAll(".table-score")
-const INPUT_SCORES = document.querySelectorAll(".input-scores")
-const TABLE_CUSTOMER_NAME = document.getElementById("customer-name")
-const CUSTOMER_NAME = document.getElementById("customer-full-name")
-const CUSTOMER_WELCOME_TXT = document.querySelector(".customer-welcome-txt")
+const $ = (selector) => document.querySelector(selector);
+const $$ = (selector) => document.querySelectorAll(selector);
 
-let submitBtn = document.querySelector(".submit-btn")
-let nextBtn = document.querySelector(".next-section-btn")
+const elements = {
+  tableScores: $$(".table-score"),
+  inputScores: $$(".input-scores"),
+  customerName: $("#customer-name"),
+  customerFullName: $("#customer-full-name"),
+  customerWelcomeTxt: $(".customer-welcome-txt"),
+  submitBtn: $(".submit-btn"),
+  nextBtn: $(".next-section-btn"),
+  inputTotalScores: $(".input-total-scores"),
+  tableTotalScores: $(".table-total-score"),
+  formSection: $$(".form-section"),
+  tableWrapper: $$(".table-wrapper"),
+  questionnaireContainer: $(".questionnaire-container"),
+  switchLang: $(".lang-switch"),
+  langRu: $$('[lang="ru"]'),
+  langEn: $$('[lang="en"]'),
+  form: $("#question-form"),
+};
 
-let sumYesVal = document.querySelectorAll(".sum-yes-val")
-let sumNoVal = document.querySelectorAll(".sum-no-val")
+let resultSum = 0;
+let totalScore = 0;
 
-let inputTotalScores = document.querySelector(".input-total-scores")
-let tableTotalScores = document.querySelector(".table-total-score")
-let inputRadioAll = document.querySelectorAll("input[type=radio]")
-let fieldsetQuestions = document.querySelectorAll(".questions")
-let formSection = document.querySelectorAll(".form-section")
-let pageForm = document.querySelector(".page-form")
-let tableWrapper = document.querySelectorAll(".table-wrapper")
-let questionnaireContainer = document.querySelector(".questionnaire-container")
-let switchLang = document.querySelector(".lang-switch")
-let langRu = document.querySelectorAll('[lang="ru"]')
-let langEn = document.querySelectorAll('[lang="en"]')
-
-let resultSum = 0
-let totalScore = 0
-let inputRadioArray = []
-
-// Switch Language
-switchLang.addEventListener("click", function() {
-  for (let i = 0; i < langRu.length; i++) {
-    langRu[i].classList.toggle("is-hidden")
-    langEn[i].classList.toggle("is-hidden")
-  }
-})
-
-function radioChecks() {
-  let inputRadioAllChecked = document.querySelectorAll("input[type='radio']:checked");
-  for (a = 0; a < inputRadioAllChecked.length; a++) {
-
-      // Add data-number values to resultSum
-      resultSum += inputRadioAllChecked[a].getAttribute("data-number") * 1;
-      totalScore += inputRadioAllChecked[a].getAttribute("data-number") * 1;
-      // console.log(totalScore)
-
-      // Remove data numbers from previous sections, so it doesn't count
-      inputRadioAllChecked[a].removeAttribute("data-number")
-  }
-}
-
-nextBtn.addEventListener("click", function() {
-  radioChecks();
-
-  // Show & hide form sections
-  for (let i = 0; i < formSection.length - 1; i++) {
-    
-    if (formSection[i].classList.contains("is-active")) {
-      TABLE_SCORES[i].textContent = ` ${resultSum}`
-      INPUT_SCORES[i].value = `${resultSum} score`
-      // TABLE_SCORES[i].classList.remove("is-active")
-      
-      formSection[i].classList.remove("is-active")
-      formSection[i].classList.add("is-hidden")
-      
-      // reset Sum for next active section
-      resultSum = 0;
-
-      // Make next section active
-      formSection[i+1].classList.remove("is-hidden")
-      formSection[i+1].classList.add("is-active")
-      if (formSection[i+1].classList.contains("last-section")) {
-        nextBtn.classList.add("is-hidden")
-        submitBtn.classList.remove("is-hidden")
-      }
-      break;
-    }
-  }
-
+elements.switchLang.addEventListener("click", () => {
+  [...elements.langRu, ...elements.langEn].forEach((element) => {
+    element.classList.toggle("is-hidden");
+  });
 });
 
-submitBtn.addEventListener("click", function() {
+const radioChecks = () => {
+  const inputRadioAllChecked = $$("input[type='radio']:checked");
+
+  inputRadioAllChecked.forEach((element) => {
+    const dataNumber = Number(element.getAttribute("data-number"));
+    resultSum += dataNumber;
+    totalScore += dataNumber;
+    element.removeAttribute("data-number");
+  });
+};
+
+elements.nextBtn.addEventListener("click", () => {
   radioChecks();
 
-  // For email
-  INPUT_SCORES[formSection.length - 1].value = `${resultSum} score`
-  inputTotalScores.value = `${totalScore} score`
+  for (let i = 0; i < elements.formSection.length - 1; i++) {
+    const section = elements.formSection[i];
+    
+    if (!section.classList.contains("is-active")) continue;
 
-  // For user
-  TABLE_SCORES[formSection.length - 1].textContent = ` ${resultSum}`
-  tableTotalScores.textContent = `${totalScore}`
+    elements.tableScores[i].textContent = ` ${resultSum}`;
+    elements.inputScores[i].value = `${resultSum} score`;
 
-  questionnaireContainer.classList.add("is-hidden")
-  CUSTOMER_WELCOME_TXT.classList.remove("is-hidden")
-  for (let c = 0; c < tableWrapper.length; c++) {
-    tableWrapper[c].classList.remove("is-hidden")
-    TABLE_CUSTOMER_NAME.textContent = `${CUSTOMER_NAME.value},`
+    section.classList.remove("is-active");
+    section.classList.add("is-hidden");
+
+    resultSum = 0;
+
+    const nextSection = elements.formSection[i + 1];
+    nextSection.classList.remove("is-hidden");
+    nextSection.classList.add("is-active");
+
+    if (nextSection.classList.contains("last-section")) {
+      elements.nextBtn.classList.add("is-hidden");
+      elements.submitBtn.classList.remove("is-hidden");
+    }
+    break;
   }
+});
 
+elements.submitBtn.addEventListener("click", () => {
+  radioChecks();
+
+  const lastSectionIndex = elements.formSection.length - 1;
+
+  elements.inputScores[lastSectionIndex].value = `${resultSum} score`;
+  elements.inputTotalScores.value = `${totalScore} score`;
+
+  elements.tableScores[lastSectionIndex].textContent = ` ${resultSum}`;
+  elements.tableTotalScores.textContent = `${totalScore}`;
+
+  elements.questionnaireContainer.classList.add("is-hidden");
+  elements.customerWelcomeTxt.classList.remove("is-hidden");
+
+  elements.tableWrapper.forEach((tableWrapper) => {
+    tableWrapper.classList.remove("is-hidden");
+    elements.customerName.textContent = `${elements.customerFullName.value},`;
+  });
 });
 
 //== Form Async
